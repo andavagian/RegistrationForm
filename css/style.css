@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #F5F5F5
+}
+
+#reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#p1{
+    opacity: 0.5;
+    margin-top: 5px;
+}
+
+#circles {
+    margin-top: 10px;
+}
+
+#circle1 {
+    color: #479C4F;
+}
+
+#circle1, #circle2, #circle3, #circle4 {
+    transition: all 0.8s;
+    font-size: 22px;
+
+}
+
+#circles > span:nth-child(2), #circles > span:nth-child(4), #circles > span:nth-child(6) {
+    font-size: 40px;
+}
+
+#inp_div_container1 {
+    margin-top: 20px;
+    transition: all 0.8s;
+}
+
+.inputs {
+    width: 500px;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#buttons {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+#next {
+    cursor: pointer;
+}
+
+#inp_div_container2 {
+    margin-top: 20px;
+    display: none;
+    transition: all 0.8s;
+
+}
+
+#country {
+    width: 500px;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#postal {
+    margin-bottom: 0;
+}
+
+#inp_div_container3 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all 0.8s;
+
+}
+
+#inp_div_container3 > div > p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#inp_div_container3 > div > textarea {
+    margin-top: 25px;
+    padding: 10px;
+    resize: none;
+}
+
+#inp_div_container4 {
+    margin-top: 20px;
+    display: none;
+    transition: all 0.8s;
+
+}
+
+#inp_div_container4 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inp_div_container4 > div > p {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.inp_div {
+    position: relative;
+}
+
+.error_message{
+    position: absolute;
+    top: 40px;
+    font-size: 14px;
+    display: none;
+    color: red;
+}
